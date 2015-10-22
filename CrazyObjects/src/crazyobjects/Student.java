@@ -12,6 +12,10 @@ public class Student
         name = n;
         stuNumber = s;
     }
+
+    Student() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     public void sendToOffice(String reason){
         System.out.println("The student has been sent to the office because:");
         System.out.println(reason);
