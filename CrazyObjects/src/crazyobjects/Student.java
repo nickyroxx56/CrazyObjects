@@ -5,9 +5,9 @@ public class Student
 {
     int stuNumber;
     String name;
-    Locker myLocker = new Locker();
-    Jacket myJacket = new Jacket();
-    Book books = new Book();
+    Locker myLocker;
+    Jacket myJacket;
+    Book books;
     public Student(String n, int s)  {
         name = n;
         stuNumber = s;
@@ -15,6 +15,9 @@ public class Student
     public void sendToOffice(String reason){
         System.out.println("The student has been sent to the office because:");
         System.out.println(reason);
+        Locker myLocker = new Locker();
+        Jacket myJacket = new Jacket();
+        Book books = new Book();
     } //prints out the reason why the student was sent to the office
     @Override
     public String toString() {
