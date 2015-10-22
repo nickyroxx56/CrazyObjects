@@ -24,5 +24,10 @@ public String course;
         return "Book{" + "title=" + title + ", course=" + course + '}';
     }
 
+    public Book(String title, String course) {
+        this.title = title;
+        this.course = course;
+    }
+
 
 } // end Book class
