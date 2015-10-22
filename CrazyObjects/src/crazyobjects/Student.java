@@ -8,9 +8,13 @@ public class Student
     Locker myLocker;
     Jacket myJacket;
     Book books;
-    public Student(String n, int s)  {
-        name = n;
-        stuNumber = s;
+
+    public Student(int stuNumber, String name, Locker myLocker, Jacket myJacket, Book books) {
+        this.stuNumber = stuNumber;
+        this.name = name;
+        this.myLocker = myLocker;
+        this.myJacket = myJacket;
+        this.books = books;
     }
 
     Student() {
@@ -19,9 +23,6 @@ public class Student
     public void sendToOffice(String reason){
         System.out.println("The student has been sent to the office because:");
         System.out.println(reason);
-        Locker myLocker = new Locker();
-        Book books = new Book();
-        Jacket myJacket = new Jacket();
     } //prints out the reason why the student was sent to the office
     @Override
     public String toString() {
