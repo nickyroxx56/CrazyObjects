@@ -16,8 +16,8 @@ public class Student
         System.out.println("The student has been sent to the office because:");
         System.out.println(reason);
         Locker myLocker = new Locker();
-        Jacket myJacket = new Jacket();
         Book books = new Book();
+        Jacket myJacket = new Jacket();
     } //prints out the reason why the student was sent to the office
     @Override
     public String toString() {
