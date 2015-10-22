@@ -1,8 +1,10 @@
 package crazyobjects;
 public class Jacket
 {
-    Student owner = new Student();
-    public Jacket(Student me){
-        
+    Student owner;
+
+    public Jacket(Student owner) {
+        this.owner = owner;
     }
+    
 } // end Jacket class
