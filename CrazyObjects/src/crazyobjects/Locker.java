@@ -5,10 +5,19 @@ public class Locker
     public int number;
     public Student owner;
     public Book[] books;
+    public boolean isJacketInLocker;
 
-    public Jacket getStudentJacket() {
-        return studentJacket;
+    public Locker(Jacket studentJacket, int number, Student owner, Book[] books, boolean isJacketInLocker) {
+        this.studentJacket = studentJacket;
+        this.number = number;
+        this.owner = owner;
+        this.books = books;
+        this.isJacketInLocker = isJacketInLocker;
+        //this.owner = new Student();
+        //this.studentJacket = new Jacket();
     }
+
+    
 
     public void setStudentJacket(Jacket studentJacket) {
         this.studentJacket = studentJacket;
@@ -40,19 +49,19 @@ public class Locker
 
     @Override
     public String toString() {
-        return "Locker{" + "studentJacket=" + studentJacket + ", number=" + number + ", owner=" + owner + ", books=" + books + '}';
+        return "Locker{" + "studentJacket=" + studentJacket + ", number=" + number + ", owner=" + owner + ", books=" + books + ", isJacketInLocker=" + isJacketInLocker + '}';
     }
 
-    public Locker(int number, Book[] books) {
-        this.number = number;
-        this.books = books;
-        this.owner = new Student();
-        this.studentJacket = new Jacket();
-        
+    public Jacket checkJacket() {
+        return studentJacket;
+    }
+
+    public void takeOutJacket() {
+        isJacketInLocker = false;
     }
     
-    public Jacket takeOutJacket() {
-        return .getStudentjacket;
+    public void putJacket() {
+        isJacketInLocker = true;
     }
-    
+
 } // end Locker class
