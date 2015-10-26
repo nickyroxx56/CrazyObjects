@@ -43,11 +43,13 @@ public class ClassRoom
              me.sendToOffice("Get a book!");
             return false;
         }
-        if (me.books.course.equals(course) == false){
-            me.sendToOffice("Get the correct book!");
-            return false;
+        for (int i = 0; i < me.books.length; i++){
+            if (me.books[i].equals(course)){
+                return true;
+            }
         }
-        return true;
+        
+        return false;
     }
    
 

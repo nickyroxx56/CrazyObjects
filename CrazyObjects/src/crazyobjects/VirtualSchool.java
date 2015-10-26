@@ -1,4 +1,5 @@
 
+import crazyobjects.Book;
 import crazyobjects.Student;
 
 
@@ -32,9 +33,7 @@ public class VirtualSchool {
                     break;
                 } else {
 
-                    me.books[i] = new Book();
-                    me.books[i].setTitle("Random");
-                    me.books[i].setCourse("No course");
+                    me.books[i] = new Book("Random", "No course");
 
                 }
 

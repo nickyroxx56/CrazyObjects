@@ -7,14 +7,13 @@ public class Locker
     public Book[] books;
     public boolean isJacketInLocker;
 
-    public Locker(Jacket studentJacket, int number, Student owner, Book[] books, boolean isJacketInLocker) {
+    public Locker(int number, Student owner) {
         this.studentJacket = studentJacket;
         Jacket myJacket = new Jacket(owner);
-        Book myBook = new Book (title, course);
+        Book myBook = new Book ("Comsci", "ICS4U");
         this.number = number;
         this.owner = owner;
-        this.books = books;
-        this.isJacketInLocker = isJacketInLocker;
+        
         //this.owner = new Student();
         //this.studentJacket = new Jacket();
     }
