@@ -1,6 +1,7 @@
 package crazyobjects;
 public class Book
-{public String title;
+{
+public String title;
 public String course;
 
     public String getTitle() {

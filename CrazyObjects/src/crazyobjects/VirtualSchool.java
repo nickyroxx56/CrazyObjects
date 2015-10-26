@@ -1,4 +1,7 @@
 
+import crazyobjects.Student;
+
+
 public class VirtualSchool {
 
     /**
@@ -6,7 +9,8 @@ public class VirtualSchool {
      * to add your own tests
      */
     public static void main(String[] args) {   // Create a student and display
-        Student me = new Student("Shanpei", 1234);
+        
+        Student me = new Student(1234, "Shanpei");
         System.out.println("Student: " + me + "\n");
 
         // Create Student's classes

@@ -9,6 +9,8 @@ public class Locker
 
     public Locker(Jacket studentJacket, int number, Student owner, Book[] books, boolean isJacketInLocker) {
         this.studentJacket = studentJacket;
+        Jacket myJacket = new Jacket(owner);
+        Book myBook = new Book (title, course);
         this.number = number;
         this.owner = owner;
         this.books = books;
