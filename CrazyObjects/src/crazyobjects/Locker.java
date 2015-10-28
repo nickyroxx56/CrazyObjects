@@ -1,10 +1,13 @@
 package crazyobjects;
+
+import java.util.ArrayList;
+
 public class Locker
 {
     public Jacket studentJacket;
     public int number;
     public Student owner;
-    public Book[] books;
+    public ArrayList<Book> books = new ArrayList<Book>();
     public boolean isJacketInLocker;
 
     public Locker(int number, Student owner) {
@@ -40,13 +43,15 @@ public class Locker
         this.owner = owner;
     }
 
-    public Book[] getBooks() {
+    public ArrayList<Book> getBooks() {
         return books;
     }
 
-    public void setBooks(Book[] books) {
+    public void setBooks(ArrayList<Book> books) {
         this.books = books;
     }
+
+  
 
     @Override
     public String toString() {

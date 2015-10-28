@@ -21,13 +21,13 @@ public class VirtualSchool {
         // Retrieve books from locker needed for classes 
 
         me.books = new Book[2];
-        for (int i = 0; i < me.myLocker.books.length; i++) {
-            if (me.myLocker.books[i].course.equalsIgnoreCase("ICS4U")) {
-                me.books[i] = me.myLocker.books[i];
-                me.myLocker.books[i] = null;
-            } else if (me.myLocker.books[i].course.equalsIgnoreCase("SBI4U")) {
-                me.books[i] = me.myLocker.books[i];
-                me.myLocker.books[i] = null;
+        for (int i = 0; i < me.myLocker.books.size(); i++) {
+            if (me.myLocker.books.get(i).course.equalsIgnoreCase("ICS4U")) {
+                me.myLocker.books.set(i, me.myLocker.books.get(i));
+                me.myLocker.books.set(i, null);
+            } else if (me.myLocker.books.get(i).course.equalsIgnoreCase("SBI4U")) {
+                me.myLocker.books.set(i, me.myLocker.books.get(i));
+                me.myLocker.books.set(i, null);
             } else {
                 if (i >= me.books.length) {
                     break;
