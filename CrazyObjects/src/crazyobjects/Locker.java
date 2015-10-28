@@ -22,7 +22,7 @@ public class Locker
     }
 
     
-
+//ASWAGGas
     public void setStudentJacket(Jacket studentJacket) {
         this.studentJacket = studentJacket;
     }
